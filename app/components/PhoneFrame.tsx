@@ -4,12 +4,12 @@ import { ReactNode } from 'react';
 
 interface PhoneFrameProps {
   children?: ReactNode;
+  screenWidth: number;
+  screenHeight: number;
+  zoom: number;
 }
 
-export default function PhoneFrame({ children }: PhoneFrameProps) {
-  // Screen area is 393x852 (iPhone 14/15), frame adds bezels around it
-  const screenWidth = 393;
-  const screenHeight = 852;
+export default function PhoneFrame({ children, screenWidth, screenHeight, zoom }: PhoneFrameProps) {
   const bezelX = 25; // horizontal bezel on each side
   const bezelY = 22; // vertical bezel on top and bottom
   
@@ -19,6 +19,8 @@ export default function PhoneFrame({ children }: PhoneFrameProps) {
       style={{ 
         width: screenWidth + (bezelX * 2),
         height: screenHeight + (bezelY * 2),
+        transform: `scale(${zoom})`,
+        transformOrigin: 'center',
       }}
     >
       {/* Phone outer frame */}

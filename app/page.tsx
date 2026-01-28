@@ -8,9 +8,15 @@ import PrototypeScreen from './components/PrototypeScreen';
 const DEFAULT_SETTINGS: PrototypeSettings = {
   theme: 'light',
   animationSpeed: 1,
+  device: {
+    name: 'iPhone 14/15 Pro',
+    screenWidth: 393,
+    screenHeight: 852,
+  },
+  zoom: 1,
   features: {
     showStatusBar: true,
-    showNavigation: true,
+    showNavigation: false,
     showBrowserNav: true,
   },
 };
@@ -35,7 +41,11 @@ export default function Home() {
 
         {/* Phone Mockup Container */}
         <div className="relative z-10">
-          <PhoneFrame>
+          <PhoneFrame
+            screenWidth={settings.device.screenWidth}
+            screenHeight={settings.device.screenHeight}
+            zoom={settings.zoom}
+          >
             <PrototypeScreen settings={settings} />
           </PhoneFrame>
         </div>

@@ -10,6 +10,12 @@ interface SidebarProps {
 export interface PrototypeSettings {
   theme: 'light' | 'dark';
   animationSpeed: number;
+  device: {
+    name: string;
+    screenWidth: number;
+    screenHeight: number;
+  };
+  zoom: number;
   features: {
     showStatusBar: boolean;
     showNavigation: boolean;
@@ -69,6 +75,67 @@ export default function Sidebar({ settings, onSettingsChange }: SidebarProps) {
           >
             Dark
           </button>
+        </div>
+      </div>
+
+      {/* Device Selector */}
+      <div className="p-5 border-b border-sidebar-border">
+        <label className="block text-sm font-medium text-white mb-3">Device</label>
+        <div className="space-y-2">
+          <button
+            onClick={() => updateSetting('device', { name: 'iPhone 14/15 Pro', screenWidth: 393, screenHeight: 852 })}
+            className={`w-full py-2 px-4 rounded-lg text-sm font-medium transition-colors text-left ${
+              settings.device.name === 'iPhone 14/15 Pro'
+                ? 'bg-accent text-white'
+                : 'bg-surface text-text-muted hover:bg-surface-hover'
+            }`}
+          >
+            iPhone 14/15 Pro
+            <span className="text-xs opacity-70 ml-2">393×852</span>
+          </button>
+          <button
+            onClick={() => updateSetting('device', { name: 'iPhone 14/15 Pro Max', screenWidth: 430, screenHeight: 932 })}
+            className={`w-full py-2 px-4 rounded-lg text-sm font-medium transition-colors text-left ${
+              settings.device.name === 'iPhone 14/15 Pro Max'
+                ? 'bg-accent text-white'
+                : 'bg-surface text-text-muted hover:bg-surface-hover'
+            }`}
+          >
+            iPhone 14/15 Pro Max
+            <span className="text-xs opacity-70 ml-2">430×932</span>
+          </button>
+          <button
+            onClick={() => updateSetting('device', { name: 'iPhone SE', screenWidth: 375, screenHeight: 667 })}
+            className={`w-full py-2 px-4 rounded-lg text-sm font-medium transition-colors text-left ${
+              settings.device.name === 'iPhone SE'
+                ? 'bg-accent text-white'
+                : 'bg-surface text-text-muted hover:bg-surface-hover'
+            }`}
+          >
+            iPhone SE
+            <span className="text-xs opacity-70 ml-2">375×667</span>
+          </button>
+        </div>
+      </div>
+
+      {/* Zoom Control */}
+      <div className="p-5 border-b border-sidebar-border">
+        <label className="block text-sm font-medium text-white mb-3">
+          Zoom: {Math.round(settings.zoom * 100)}%
+        </label>
+        <input
+          type="range"
+          min="0.5"
+          max="1.5"
+          step="0.1"
+          value={settings.zoom}
+          onChange={(e) => updateSetting('zoom', Number(e.target.value))}
+          className="w-full h-2 bg-surface rounded-lg appearance-none cursor-pointer accent-accent"
+        />
+        <div className="flex justify-between text-xs text-text-muted mt-2">
+          <span>50%</span>
+          <span>100%</span>
+          <span>150%</span>
         </div>
       </div>
 
