@@ -1,0 +1,104 @@
+/* ===========================================
+   GYG Compass Design System - Spacing
+   =========================================== */
+
+/* --- Primitive Spacing Tokens (8px base grid) --- */
+:root[data-design-system="compass"] {
+  --spacing-none: 0;
+  --spacing-0-5x: 4px;
+  --spacing-1x: 8px;
+  --spacing-1-5x: 12px;
+  --spacing-2x: 16px;
+  --spacing-3x: 24px;
+  --spacing-4x: 32px;
+  --spacing-5x: 40px;
+  --spacing-6x: 48px;
+  --spacing-7x: 56px;
+  --spacing-8x: 64px;
+  --spacing-16x: 128px;
+}
+
+/* --- Purpose Spacing Tokens --- */
+:root[data-design-system="compass"] {
+  /* Page padding */
+  --spacing-page-horizontal-mobile: var(--spacing-2x);
+  --spacing-page-horizontal-desktop: var(--spacing-4x);
+  --spacing-page-vertical-mobile: var(--spacing-2x);
+  --spacing-page-vertical-desktop: var(--spacing-5x);
+
+  /* Section gaps */
+  --spacing-section-gap-mobile: var(--spacing-6x);
+  --spacing-section-gap-desktop: var(--spacing-7x);
+
+  /* Component spacing */
+  --spacing-icon-text-gap: var(--spacing-1x);
+  --spacing-icon-text-gap-compact: var(--spacing-0-5x);
+  --spacing-input-gap: var(--spacing-2x);
+  --spacing-control-options-gap: var(--spacing-none);
+}
+
+/* --- Spacing Utility Classes --- */
+
+/* Padding utilities */
+[data-design-system="compass"] .p-0 { padding: var(--spacing-none); }
+[data-design-system="compass"] .p-0-5x { padding: var(--spacing-0-5x); }
+[data-design-system="compass"] .p-1x { padding: var(--spacing-1x); }
+[data-design-system="compass"] .p-1-5x { padding: var(--spacing-1-5x); }
+[data-design-system="compass"] .p-2x { padding: var(--spacing-2x); }
+[data-design-system="compass"] .p-3x { padding: var(--spacing-3x); }
+[data-design-system="compass"] .p-4x { padding: var(--spacing-4x); }
+[data-design-system="compass"] .p-5x { padding: var(--spacing-5x); }
+[data-design-system="compass"] .p-6x { padding: var(--spacing-6x); }
+[data-design-system="compass"] .p-8x { padding: var(--spacing-8x); }
+
+/* Padding X (horizontal) */
+[data-design-system="compass"] .px-0 { padding-left: var(--spacing-none); padding-right: var(--spacing-none); }
+[data-design-system="compass"] .px-0-5x { padding-left: var(--spacing-0-5x); padding-right: var(--spacing-0-5x); }
+[data-design-system="compass"] .px-1x { padding-left: var(--spacing-1x); padding-right: var(--spacing-1x); }
+[data-design-system="compass"] .px-1-5x { padding-left: var(--spacing-1-5x); padding-right: var(--spacing-1-5x); }
+[data-design-system="compass"] .px-2x { padding-left: var(--spacing-2x); padding-right: var(--spacing-2x); }
+[data-design-system="compass"] .px-3x { padding-left: var(--spacing-3x); padding-right: var(--spacing-3x); }
+[data-design-system="compass"] .px-4x { padding-left: var(--spacing-4x); padding-right: var(--spacing-4x); }
+
+/* Padding Y (vertical) */
+[data-design-system="compass"] .py-0 { padding-top: var(--spacing-none); padding-bottom: var(--spacing-none); }
+[data-design-system="compass"] .py-0-5x { padding-top: var(--spacing-0-5x); padding-bottom: var(--spacing-0-5x); }
+[data-design-system="compass"] .py-1x { padding-top: var(--spacing-1x); padding-bottom: var(--spacing-1x); }
+[data-design-system="compass"] .py-1-5x { padding-top: var(--spacing-1-5x); padding-bottom: var(--spacing-1-5x); }
+[data-design-system="compass"] .py-2x { padding-top: var(--spacing-2x); padding-bottom: var(--spacing-2x); }
+[data-design-system="compass"] .py-3x { padding-top: var(--spacing-3x); padding-bottom: var(--spacing-3x); }
+[data-design-system="compass"] .py-4x { padding-top: var(--spacing-4x); padding-bottom: var(--spacing-4x); }
+
+/* Margin utilities */
+[data-design-system="compass"] .m-0 { margin: var(--spacing-none); }
+[data-design-system="compass"] .m-0-5x { margin: var(--spacing-0-5x); }
+[data-design-system="compass"] .m-1x { margin: var(--spacing-1x); }
+[data-design-system="compass"] .m-1-5x { margin: var(--spacing-1-5x); }
+[data-design-system="compass"] .m-2x { margin: var(--spacing-2x); }
+[data-design-system="compass"] .m-3x { margin: var(--spacing-3x); }
+[data-design-system="compass"] .m-4x { margin: var(--spacing-4x); }
+
+/* Margin X (horizontal) */
+[data-design-system="compass"] .mx-0 { margin-left: var(--spacing-none); margin-right: var(--spacing-none); }
+[data-design-system="compass"] .mx-1x { margin-left: var(--spacing-1x); margin-right: var(--spacing-1x); }
+[data-design-system="compass"] .mx-2x { margin-left: var(--spacing-2x); margin-right: var(--spacing-2x); }
+[data-design-system="compass"] .mx-3x { margin-left: var(--spacing-3x); margin-right: var(--spacing-3x); }
+[data-design-system="compass"] .mx-4x { margin-left: var(--spacing-4x); margin-right: var(--spacing-4x); }
+
+/* Margin Y (vertical) */
+[data-design-system="compass"] .my-0 { margin-top: var(--spacing-none); margin-bottom: var(--spacing-none); }
+[data-design-system="compass"] .my-1x { margin-top: var(--spacing-1x); margin-bottom: var(--spacing-1x); }
+[data-design-system="compass"] .my-2x { margin-top: var(--spacing-2x); margin-bottom: var(--spacing-2x); }
+[data-design-system="compass"] .my-3x { margin-top: var(--spacing-3x); margin-bottom: var(--spacing-3x); }
+[data-design-system="compass"] .my-4x { margin-top: var(--spacing-4x); margin-bottom: var(--spacing-4x); }
+
+/* Gap utilities (for flexbox/grid) */
+[data-design-system="compass"] .gap-0 { gap: var(--spacing-none); }
+[data-design-system="compass"] .gap-0-5x { gap: var(--spacing-0-5x); }
+[data-design-system="compass"] .gap-1x { gap: var(--spacing-1x); }
+[data-design-system="compass"] .gap-1-5x { gap: var(--spacing-1-5x); }
+[data-design-system="compass"] .gap-2x { gap: var(--spacing-2x); }
+[data-design-system="compass"] .gap-3x { gap: var(--spacing-3x); }
+[data-design-system="compass"] .gap-4x { gap: var(--spacing-4x); }
+[data-design-system="compass"] .gap-5x { gap: var(--spacing-5x); }
+[data-design-system="compass"] .gap-6x { gap: var(--spacing-6x); }

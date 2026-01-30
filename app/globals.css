@@ -1,5 +1,12 @@
 @import "tailwindcss";
 
+/* Compass Design System Imports (scoped via data-design-system attribute) */
+@import "./styles/compass/tokens.css";
+@import "./styles/compass/typography.css";
+@import "./styles/compass/spacing.css";
+@import "./styles/compass/elevations.css";
+@import "./styles/compass/icons.css";
+
 :root {
   --background: #1a1a2e;
   --foreground: #eaeaea;

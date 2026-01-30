@@ -1,0 +1,82 @@
+/* ===========================================
+   GYG Compass Design System - Elevations
+   =========================================== */
+
+/* --- Elevation Tokens --- */
+:root[data-design-system="compass"] {
+  /* Elevation shadows */
+  --elevation-1: none;
+  --elevation-16: 0 0 32px rgba(0, 0, 0, 0.06), 0 4px 8px rgba(0, 0, 0, 0.16);
+  --elevation-32: 0 0 64px rgba(0, 0, 0, 0.08), 0 8px 16px rgba(0, 0, 0, 0.16);
+
+  /* Overlay shadow (for menus, dropdowns) */
+  --shadow-overlay: 0 0 4px var(--border-primary);
+}
+
+/* --- Border Radius Tokens --- */
+:root[data-design-system="compass"] {
+  --radius-none: 0;
+  --radius-0-5x: 4px;
+  --radius-1x: 8px;
+  --radius-1-5x: 12px;
+  --radius-2x: 16px;
+  --radius-full: 50%;
+}
+
+/* --- Z-Index Tokens --- */
+:root[data-design-system="compass"] {
+  --z-base: 1;
+  --z-loading: 5;
+  --z-menu: 10;
+  --z-overlay: 20;
+  --z-modal: 30;
+  --z-over-all: 40;
+}
+
+/* --- Breakpoints (reference values, not CSS variables) --- */
+/*
+  xs (phone landscape): 576px
+  sm (tablet portrait): 768px
+  md (tablet landscape): 1024px
+  lg (desktop normal): 1200px
+  xl (desktop wide): 1440px
+*/
+
+/* --- Elevation Utility Classes --- */
+
+/* Elevation Level 1 - Flat with border */
+[data-design-system="compass"] .elevation-1 {
+  border: 1px solid var(--border-primary);
+  background-color: var(--background-primary);
+  box-shadow: var(--elevation-1);
+}
+
+/* Elevation Level 16 - Subtle shadow */
+[data-design-system="compass"] .elevation-16 {
+  border: 1px solid var(--border-primary);
+  background-color: var(--surface-primary);
+  box-shadow: var(--elevation-16);
+}
+
+/* Elevation Level 32 - Prominent shadow */
+[data-design-system="compass"] .elevation-32 {
+  border: 1px solid var(--border-primary);
+  background-color: var(--surface-primary);
+  box-shadow: var(--elevation-32);
+}
+
+/* --- Border Radius Utility Classes --- */
+[data-design-system="compass"] .rounded-none { border-radius: var(--radius-none); }
+[data-design-system="compass"] .rounded-0-5x { border-radius: var(--radius-0-5x); }
+[data-design-system="compass"] .rounded-1x { border-radius: var(--radius-1x); }
+[data-design-system="compass"] .rounded-1-5x { border-radius: var(--radius-1-5x); }
+[data-design-system="compass"] .rounded-2x { border-radius: var(--radius-2x); }
+[data-design-system="compass"] .rounded-full { border-radius: var(--radius-full); }
+
+/* --- Z-Index Utility Classes --- */
+[data-design-system="compass"] .z-base { z-index: var(--z-base); }
+[data-design-system="compass"] .z-loading { z-index: var(--z-loading); }
+[data-design-system="compass"] .z-menu { z-index: var(--z-menu); }
+[data-design-system="compass"] .z-overlay { z-index: var(--z-overlay); }
+[data-design-system="compass"] .z-modal { z-index: var(--z-modal); }
+[data-design-system="compass"] .z-over-all { z-index: var(--z-over-all); }

@@ -19,7 +19,11 @@ export default function PrototypeScreen({ settings }: PrototypeScreenProps) {
   const browserNavText = isDark ? '#ffffff' : '#000000';
 
   return (
-    <div className={`relative w-full h-full flex flex-col ${bgColor}`}>
+    <div 
+      data-design-system="compass" 
+      data-theme={settings.theme}
+      className={`relative w-full h-full flex flex-col ${bgColor}`}
+    >
       {/* Status Bar */}
       {settings.features.showStatusBar && (
         <motion.div

@@ -1,0 +1,294 @@
+/* ===========================================
+   GYG Compass Design System - Typography
+   =========================================== */
+
+/* --- Font Faces (CDN) --- */
+
+/* GT Eesti Light (200) */
+@font-face {
+  font-family: "GT Eesti";
+  font-style: normal;
+  font-display: swap;
+  font-weight: 200;
+  src:
+    url("https://cdn.getyourguide.com/design-system/GT-Eesti/2025/GT-Eesti-Pro-Display-Light.woff2") format("woff2"),
+    url("https://cdn.getyourguide.com/design-system/GT-Eesti/2025/GT-Eesti-Pro-Display-Light.woff") format("woff");
+}
+
+@font-face {
+  font-family: "GT Eesti";
+  font-style: italic;
+  font-display: swap;
+  font-weight: 200;
+  src:
+    url("https://cdn.getyourguide.com/design-system/GT-Eesti/2025/GT-Eesti-Pro-Display-Light-Italic.woff2") format("woff2"),
+    url("https://cdn.getyourguide.com/design-system/GT-Eesti/2025/GT-Eesti-Pro-Display-Light-Italic.woff") format("woff");
+}
+
+/* GT Eesti Regular (400) */
+@font-face {
+  font-family: "GT Eesti";
+  font-style: normal;
+  font-display: swap;
+  font-weight: 400;
+  src:
+    url("https://cdn.getyourguide.com/design-system/GT-Eesti/2025/GT-Eesti-Pro-Display-Regular.woff2") format("woff2"),
+    url("https://cdn.getyourguide.com/design-system/GT-Eesti/2025/GT-Eesti-Pro-Display-Regular.woff") format("woff");
+}
+
+@font-face {
+  font-family: "GT Eesti";
+  font-style: italic;
+  font-display: swap;
+  font-weight: 400;
+  src:
+    url("https://cdn.getyourguide.com/design-system/GT-Eesti/2025/GT-Eesti-Pro-Display-Regular-Italic.woff2") format("woff2"),
+    url("https://cdn.getyourguide.com/design-system/GT-Eesti/2025/GT-Eesti-Pro-Display-Regular-Italic.woff") format("woff");
+}
+
+/* GT Eesti Medium (500) */
+@font-face {
+  font-family: "GT Eesti";
+  font-style: normal;
+  font-display: swap;
+  font-weight: 500;
+  src:
+    url("https://cdn.getyourguide.com/design-system/GT-Eesti/2025/GT-Eesti-Pro-Display-Medium.woff2") format("woff2"),
+    url("https://cdn.getyourguide.com/design-system/GT-Eesti/2025/GT-Eesti-Pro-Display-Medium.woff") format("woff");
+}
+
+@font-face {
+  font-family: "GT Eesti";
+  font-style: italic;
+  font-display: swap;
+  font-weight: 500;
+  src:
+    url("https://cdn.getyourguide.com/design-system/GT-Eesti/2025/GT-Eesti-Pro-Display-Medium-Italic.woff2") format("woff2"),
+    url("https://cdn.getyourguide.com/design-system/GT-Eesti/2025/GT-Eesti-Pro-Display-Medium-Italic.woff") format("woff");
+}
+
+/* GT Eesti Bold (700) */
+@font-face {
+  font-family: "GT Eesti";
+  font-style: normal;
+  font-display: swap;
+  font-weight: 700;
+  src:
+    url("https://cdn.getyourguide.com/design-system/GT-Eesti/2025/GT-Eesti-Pro-Display-Bold.woff2") format("woff2"),
+    url("https://cdn.getyourguide.com/design-system/GT-Eesti/2025/GT-Eesti-Pro-Display-Bold.woff") format("woff");
+}
+
+@font-face {
+  font-family: "GT Eesti";
+  font-style: italic;
+  font-display: swap;
+  font-weight: 700;
+  src:
+    url("https://cdn.getyourguide.com/design-system/GT-Eesti/2025/GT-Eesti-Pro-Display-Bold-Italic.woff2") format("woff2"),
+    url("https://cdn.getyourguide.com/design-system/GT-Eesti/2025/GT-Eesti-Pro-Display-Bold-Italic.woff") format("woff");
+}
+
+/* GT Eesti Bold Expressive (800) */
+@font-face {
+  font-family: "GT Eesti";
+  font-style: normal;
+  font-display: swap;
+  font-weight: 800;
+  src:
+    url("https://cdn.getyourguide.com/design-system/GT-Eesti/2025/GT-Eesti-Pro-Display-Bold-Expressive.woff2") format("woff2"),
+    url("https://cdn.getyourguide.com/design-system/GT-Eesti/2025/GT-Eesti-Pro-Display-Bold-Expressive.woff") format("woff");
+}
+
+/* --- Typography Variables --- */
+:root[data-design-system="compass"] {
+  --font-family-primary: "GT Eesti", arial, sans-serif;
+  --font-weight-light: 200;
+  --font-weight-regular: 400;
+  --font-weight-medium: 500;
+  --font-weight-bold: 700;
+  --font-weight-expressive: 800;
+  --font-base-size: 16px;
+}
+
+/* --- Typography Utility Classes --- */
+
+/* Headline - largest display text */
+[data-design-system="compass"] .text-headline {
+  font-family: var(--font-family-primary);
+  font-size: 2.75rem; /* 44px */
+  line-height: 3rem; /* 48px */
+  font-weight: var(--font-weight-bold);
+}
+
+@media (min-width: 1024px) {
+  [data-design-system="compass"] .text-headline {
+    font-size: 5rem; /* 80px */
+    line-height: 5.25rem; /* 84px */
+  }
+}
+
+/* Headline 2 */
+[data-design-system="compass"] .text-headline-2 {
+  font-family: var(--font-family-primary);
+  font-size: 2.75rem; /* 44px */
+  line-height: 3rem; /* 48px */
+  font-weight: var(--font-weight-bold);
+}
+
+@media (min-width: 1024px) {
+  [data-design-system="compass"] .text-headline-2 {
+    font-size: 4rem; /* 64px */
+    line-height: 4.25rem; /* 68px */
+  }
+}
+
+/* Title 1 */
+[data-design-system="compass"] .text-title-1 {
+  font-family: var(--font-family-primary);
+  font-size: 1.75rem; /* 28px */
+  line-height: 2rem; /* 32px */
+  font-weight: var(--font-weight-bold);
+}
+
+@media (min-width: 1024px) {
+  [data-design-system="compass"] .text-title-1 {
+    font-size: 2.25rem; /* 36px */
+    line-height: 2.75rem; /* 44px */
+  }
+}
+
+/* Title 2 */
+[data-design-system="compass"] .text-title-2 {
+  font-family: var(--font-family-primary);
+  font-size: 1.5rem; /* 24px */
+  line-height: 1.875rem; /* 30px */
+  font-weight: var(--font-weight-bold);
+}
+
+/* Title 3 */
+[data-design-system="compass"] .text-title-3 {
+  font-family: var(--font-family-primary);
+  font-size: 1.25rem; /* 20px */
+  line-height: 1.5rem; /* 24px */
+  font-weight: var(--font-weight-bold);
+}
+
+/* Title 4 */
+[data-design-system="compass"] .text-title-4 {
+  font-family: var(--font-family-primary);
+  font-size: 1.125rem; /* 18px */
+  line-height: 1.5rem; /* 24px */
+  font-weight: var(--font-weight-bold);
+}
+
+/* Body */
+[data-design-system="compass"] .text-body {
+  font-family: var(--font-family-primary);
+  font-size: 1rem; /* 16px */
+  line-height: 1.375rem; /* 22px */
+  font-weight: var(--font-weight-regular);
+}
+
+/* Body Strong */
+[data-design-system="compass"] .text-body-strong {
+  font-family: var(--font-family-primary);
+  font-size: 1rem; /* 16px */
+  line-height: 1.375rem; /* 22px */
+  font-weight: var(--font-weight-medium);
+}
+
+/* Body Link */
+[data-design-system="compass"] .text-body-link {
+  font-family: var(--font-family-primary);
+  font-size: 1rem; /* 16px */
+  line-height: 1.375rem; /* 22px */
+  font-weight: var(--font-weight-medium);
+  text-decoration: underline;
+}
+
+/* Body Compact */
+[data-design-system="compass"] .text-body-compact {
+  font-family: var(--font-family-primary);
+  font-size: 1rem; /* 16px */
+  line-height: 1.25rem; /* 20px */
+  font-weight: var(--font-weight-regular);
+}
+
+/* Body Compact Strong */
+[data-design-system="compass"] .text-body-compact-strong {
+  font-family: var(--font-family-primary);
+  font-size: 1rem; /* 16px */
+  line-height: 1.25rem; /* 20px */
+  font-weight: var(--font-weight-medium);
+}
+
+/* Body Highlight */
+[data-design-system="compass"] .text-body-highlight {
+  font-family: var(--font-family-primary);
+  font-size: 1rem; /* 16px */
+  line-height: 1.375rem; /* 22px */
+  font-weight: var(--font-weight-bold);
+}
+
+/* Caption */
+[data-design-system="compass"] .text-caption {
+  font-family: var(--font-family-primary);
+  font-size: 0.875rem; /* 14px */
+  line-height: 1.25rem; /* 20px */
+  font-weight: var(--font-weight-regular);
+}
+
+/* Caption Strong */
+[data-design-system="compass"] .text-caption-strong {
+  font-family: var(--font-family-primary);
+  font-size: 0.875rem; /* 14px */
+  line-height: 1.25rem; /* 20px */
+  font-weight: var(--font-weight-medium);
+}
+
+/* Caption Link */
+[data-design-system="compass"] .text-caption-link {
+  font-family: var(--font-family-primary);
+  font-size: 0.875rem; /* 14px */
+  line-height: 1.25rem; /* 20px */
+  font-weight: var(--font-weight-medium);
+  text-decoration: underline;
+}
+
+/* Caption Compact */
+[data-design-system="compass"] .text-caption-compact {
+  font-family: var(--font-family-primary);
+  font-size: 0.875rem; /* 14px */
+  line-height: 1.125rem; /* 18px */
+  font-weight: var(--font-weight-regular);
+}
+
+/* Caption Compact Strong */
+[data-design-system="compass"] .text-caption-compact-strong {
+  font-family: var(--font-family-primary);
+  font-size: 0.875rem; /* 14px */
+  line-height: 1.125rem; /* 18px */
+  font-weight: var(--font-weight-medium);
+}
+
+/* Caption Highlight */
+[data-design-system="compass"] .text-caption-highlight {
+  font-family: var(--font-family-primary);
+  font-size: 0.875rem; /* 14px */
+  line-height: 1.25rem; /* 20px */
+  font-weight: var(--font-weight-bold);
+}
+
+/* Label */
+[data-design-system="compass"] .text-label {
+  font-family: var(--font-family-primary);
+  font-size: 0.75rem; /* 12px */
+  line-height: 1rem; /* 16px */
+  font-weight: var(--font-weight-regular);
+}
+
+/* Expressive (for special display text) */
+[data-design-system="compass"] .text-expressive {
+  font-family: var(--font-family-primary);
+  font-weight: var(--font-weight-expressive);
+}

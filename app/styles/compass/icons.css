@@ -1,0 +1,211 @@
+/* ===========================================
+   GYG Compass Design System - Icons
+   =========================================== */
+
+/* --- Icon Font Face (CDN) --- */
+@font-face {
+  font-family: "compass-icons-v11";
+  src: url("https://cdn.getyourguide.com/design-system/icon-fonts/compass-icons-v11.eot");
+  src:
+    url("https://cdn.getyourguide.com/design-system/icon-fonts/compass-icons-v11.eot?#iefix") format("embedded-opentype"),
+    url("https://cdn.getyourguide.com/design-system/icon-fonts/compass-icons-v11.woff2") format("woff2"),
+    url("https://cdn.getyourguide.com/design-system/icon-fonts/compass-icons-v11.woff") format("woff"),
+    url("https://cdn.getyourguide.com/design-system/icon-fonts/compass-icons-v11.ttf") format("truetype"),
+    url("https://cdn.getyourguide.com/design-system/icon-fonts/compass-icons-v11.svg") format("svg");
+}
+
+/* --- Base Icon Styles --- */
+[data-design-system="compass"] [class^="i-"],
+[data-design-system="compass"] [class*=" i-"] {
+  font-family: "compass-icons-v11" !important;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* --- Icon Definitions --- */
+
+/* Navigation */
+[data-design-system="compass"] .i-arrow-down::before { content: "\ea08"; }
+[data-design-system="compass"] .i-arrow-left::before { content: "\ea09"; }
+[data-design-system="compass"] .i-arrow-right::before { content: "\ea0a"; }
+[data-design-system="compass"] .i-arrow-up::before { content: "\ea0b"; }
+[data-design-system="compass"] .i-chevron-down::before { content: "\ea22"; }
+[data-design-system="compass"] .i-chevron-left::before { content: "\ea23"; }
+[data-design-system="compass"] .i-chevron-right::before { content: "\ea24"; }
+[data-design-system="compass"] .i-chevron-up::before { content: "\ea25"; }
+[data-design-system="compass"] .i-compact-chevron-down::before { content: "\ea2e"; }
+[data-design-system="compass"] .i-compact-chevron-left::before { content: "\ea2f"; }
+[data-design-system="compass"] .i-compact-chevron-right::before { content: "\ea30"; }
+[data-design-system="compass"] .i-compact-chevron-up::before { content: "\ea31"; }
+
+/* Actions */
+[data-design-system="compass"] .i-cross::before { content: "\ea3c"; }
+[data-design-system="compass"] .i-compact-cross::before { content: "\ea32"; }
+[data-design-system="compass"] .i-checkmark::before { content: "\ea21"; }
+[data-design-system="compass"] .i-compact-checkmark::before { content: "\ea2d"; }
+[data-design-system="compass"] .i-checkmark-in-circle::before { content: "\ea1f"; }
+[data-design-system="compass"] .i-cross-in-circle::before { content: "\ea3b"; }
+[data-design-system="compass"] .i-plus::before { content: "\ea86"; }
+[data-design-system="compass"] .i-plus-in-circle::before { content: "\ea85"; }
+[data-design-system="compass"] .i-compact-plus::before { content: "\ea35"; }
+[data-design-system="compass"] .i-compact-minus::before { content: "\ea34"; }
+[data-design-system="compass"] .i-minus-in-circle::before { content: "\ea6f"; }
+
+/* Search & Filter */
+[data-design-system="compass"] .i-search-magnifier::before { content: "\ea8e"; }
+[data-design-system="compass"] .i-compact-search-magnifier::before { content: "\ea36"; }
+[data-design-system="compass"] .i-sliders::before { content: "\ea97"; }
+[data-design-system="compass"] .i-compact-sliders::before { content: "\ea37"; }
+[data-design-system="compass"] .i-sort::before { content: "\ea98"; }
+
+/* Heart / Wishlist */
+[data-design-system="compass"] .i-heart::before { content: "\ea58"; }
+[data-design-system="compass"] .i-heart-fill::before { content: "\ea57"; }
+
+/* Star / Rating */
+[data-design-system="compass"] .i-star::before { content: "\ea9d"; }
+[data-design-system="compass"] .i-star-fill::before { content: "\ea9b"; }
+[data-design-system="compass"] .i-star-half-fill::before { content: "\ea9c"; }
+
+/* Time */
+[data-design-system="compass"] .i-clock::before { content: "\ea2b"; }
+[data-design-system="compass"] .i-clock-duration::before { content: "\ea27"; }
+[data-design-system="compass"] .i-clock-history::before { content: "\ea28"; }
+[data-design-system="compass"] .i-clock-timer::before { content: "\ea2a"; }
+
+/* Calendar */
+[data-design-system="compass"] .i-calendar::before { content: "\ea19"; }
+[data-design-system="compass"] .i-calendar-add::before { content: "\ea15"; }
+[data-design-system="compass"] .i-calendar-check::before { content: "\ea16"; }
+[data-design-system="compass"] .i-calendar-cross::before { content: "\ea17"; }
+
+/* Location */
+[data-design-system="compass"] .i-pin::before { content: "\ea81"; }
+[data-design-system="compass"] .i-pin-filled::before { content: "\ea7d"; }
+[data-design-system="compass"] .i-pin-on-map::before { content: "\ea7e"; }
+[data-design-system="compass"] .i-map::before { content: "\ea69"; }
+[data-design-system="compass"] .i-globe::before { content: "\ea52"; }
+[data-design-system="compass"] .i-nearby::before { content: "\ea77"; }
+
+/* People */
+[data-design-system="compass"] .i-user::before { content: "\eab2"; }
+[data-design-system="compass"] .i-users::before { content: "\eab3"; }
+[data-design-system="compass"] .i-single-person::before { content: "\ea95"; }
+[data-design-system="compass"] .i-guide::before { content: "\ea53"; }
+
+/* Information */
+[data-design-system="compass"] .i-info-in-circle::before { content: "\ea5b"; }
+[data-design-system="compass"] .i-question-in-circle::before { content: "\ea8a"; }
+[data-design-system="compass"] .i-exclamation-in-circle::before { content: "\ea49"; }
+[data-design-system="compass"] .i-exclamation-in-triangle::before { content: "\ea4a"; }
+
+/* Tickets & Booking */
+[data-design-system="compass"] .i-ticket-booking::before { content: "\eaa8"; }
+[data-design-system="compass"] .i-ticket-discount::before { content: "\eaa9"; }
+[data-design-system="compass"] .i-ticket-voucher::before { content: "\eaab"; }
+[data-design-system="compass"] .i-tickets::before { content: "\eaac"; }
+[data-design-system="compass"] .i-skip-the-line::before { content: "\ea96"; }
+
+/* Payment */
+[data-design-system="compass"] .i-credit-card::before { content: "\ea3a"; }
+[data-design-system="compass"] .i-credit-card-clock::before { content: "\ea39"; }
+[data-design-system="compass"] .i-wallet::before { content: "\eab8"; }
+[data-design-system="compass"] .i-money-bill::before { content: "\ea71"; }
+[data-design-system="compass"] .i-currency::before { content: "\ea3e"; }
+
+/* Share & Social */
+[data-design-system="compass"] .i-share::before { content: "\ea93"; }
+[data-design-system="compass"] .i-share-android::before { content: "\ea92"; }
+[data-design-system="compass"] .i-link::before { content: "\ea5f"; }
+[data-design-system="compass"] .i-link-out::before { content: "\ea5e"; }
+[data-design-system="compass"] .i-copy::before { content: "\ea38"; }
+[data-design-system="compass"] .i-email::before { content: "\ea48"; }
+
+/* Social Logos */
+[data-design-system="compass"] .i-logo-facebook::before { content: "\ea63"; }
+[data-design-system="compass"] .i-logo-instagram::before { content: "\ea64"; }
+[data-design-system="compass"] .i-logo-linkedin::before { content: "\ea65"; }
+[data-design-system="compass"] .i-logo-pinterest::before { content: "\ea66"; }
+[data-design-system="compass"] .i-logo-whatsapp::before { content: "\ea67"; }
+[data-design-system="compass"] .i-logo-x::before { content: "\ea68"; }
+
+/* Transportation */
+[data-design-system="compass"] .i-bus::before { content: "\ea14"; }
+[data-design-system="compass"] .i-boat::before { content: "\ea10"; }
+[data-design-system="compass"] .i-metro::before { content: "\ea6d"; }
+[data-design-system="compass"] .i-shuttle::before { content: "\ea94"; }
+[data-design-system="compass"] .i-walk::before { content: "\eab7"; }
+[data-design-system="compass"] .i-air-balloon::before { content: "\ea01"; }
+
+/* Activities */
+[data-design-system="compass"] .i-camera::before { content: "\ea1a"; }
+[data-design-system="compass"] .i-food::before { content: "\ea50"; }
+[data-design-system="compass"] .i-monument::before { content: "\ea72"; }
+[data-design-system="compass"] .i-mountain::before { content: "\ea74"; }
+[data-design-system="compass"] .i-building::before { content: "\ea13"; }
+
+/* Media */
+[data-design-system="compass"] .i-image::before { content: "\ea5a"; }
+[data-design-system="compass"] .i-play::before { content: "\ea84"; }
+[data-design-system="compass"] .i-play-fill::before { content: "\ea83"; }
+[data-design-system="compass"] .i-pause::before { content: "\ea7a"; }
+[data-design-system="compass"] .i-pause-fill::before { content: "\ea79"; }
+[data-design-system="compass"] .i-volume-control-up::before { content: "\eab6"; }
+[data-design-system="compass"] .i-mute::before { content: "\ea76"; }
+
+/* UI */
+[data-design-system="compass"] .i-menu-grid::before { content: "\ea6b"; }
+[data-design-system="compass"] .i-menu-list::before { content: "\ea6c"; }
+[data-design-system="compass"] .i-settings::before { content: "\ea91"; }
+[data-design-system="compass"] .i-bell::before { content: "\ea0e"; }
+[data-design-system="compass"] .i-cart::before { content: "\ea1b"; }
+[data-design-system="compass"] .i-download::before { content: "\ea44"; }
+[data-design-system="compass"] .i-expand::before { content: "\ea4b"; }
+[data-design-system="compass"] .i-maximize::before { content: "\ea6a"; }
+[data-design-system="compass"] .i-minimize::before { content: "\ea6e"; }
+[data-design-system="compass"] .i-eye::before { content: "\ea4e"; }
+[data-design-system="compass"] .i-eye-crossed::before { content: "\ea4d"; }
+[data-design-system="compass"] .i-lock::before { content: "\ea60"; }
+[data-design-system="compass"] .i-pen-edit::before { content: "\ea7b"; }
+[data-design-system="compass"] .i-bin::before { content: "\ea0f"; }
+[data-design-system="compass"] .i-retry::before { content: "\ea8c"; }
+
+/* Brand */
+[data-design-system="compass"] .i-gyg::before { content: "\ea55"; }
+[data-design-system="compass"] .i-gyg-symbol::before { content: "\ea54"; }
+
+/* Misc */
+[data-design-system="compass"] .i-gift::before { content: "\ea51"; }
+[data-design-system="compass"] .i-ribbon::before { content: "\ea8d"; }
+[data-design-system="compass"] .i-crown::before { content: "\ea3d"; }
+[data-design-system="compass"] .i-flash::before { content: "\ea4f"; }
+[data-design-system="compass"] .i-sparks::before { content: "\ea99"; }
+[data-design-system="compass"] .i-lightbulb::before { content: "\ea5d"; }
+[data-design-system="compass"] .i-headphones::before { content: "\ea56"; }
+[data-design-system="compass"] .i-mobile-phone::before { content: "\ea70"; }
+[data-design-system="compass"] .i-phone::before { content: "\ea7c"; }
+[data-design-system="compass"] .i-qr-code::before { content: "\ea89"; }
+[data-design-system="compass"] .i-printer-paper::before { content: "\ea88"; }
+[data-design-system="compass"] .i-document::before { content: "\ea42"; }
+[data-design-system="compass"] .i-book::before { content: "\ea11"; }
+[data-design-system="compass"] .i-translate::before { content: "\eaaf"; }
+[data-design-system="compass"] .i-sun::before { content: "\eaa0"; }
+[data-design-system="compass"] .i-morning::before { content: "\ea73"; }
+[data-design-system="compass"] .i-day::before { content: "\ea3f"; }
+[data-design-system="compass"] .i-night::before { content: "\ea78"; }
+[data-design-system="compass"] .i-rain::before { content: "\ea8b"; }
+[data-design-system="compass"] .i-wheelchair::before { content: "\eab9"; }
+[data-design-system="compass"] .i-stroller::before { content: "\ea9e"; }
+[data-design-system="compass"] .i-compact-eco::before { content: "\ea33"; }
+[data-design-system="compass"] .i-thumbs-up::before { content: "\eaa7"; }
+[data-design-system="compass"] .i-thumbs-up-fill::before { content: "\eaa6"; }
+[data-design-system="compass"] .i-thumbs-down::before { content: "\eaa5"; }
+[data-design-system="compass"] .i-thumbs-down-fill::before { content: "\eaa4"; }
+[data-design-system="compass"] .i-chat-bubble::before { content: "\ea1d"; }
+[data-design-system="compass"] .i-trips::before { content: "\eab0"; }
+[data-design-system="compass"] .i-suitcase::before { content: "\ea9f"; }

@@ -1,0 +1,273 @@
+/* ===========================================
+   GYG Compass Design System - Color Tokens
+   =========================================== */
+
+/* --- Raw Color Palette --- */
+:root {
+  /* Greys */
+  --palette-grey-100: #ebeef1;
+  --palette-grey-200: #dcdfe4;
+  --palette-grey-300: #bfc7cf;
+  --palette-grey-400: #a0a8b6;
+  --palette-grey-500: #858995;
+  --palette-grey-600: #63687a;
+  --palette-grey-700: #494d58;
+  --palette-grey-800: #31343d;
+  --palette-grey-900: #191b20;
+
+  /* Blues */
+  --palette-blue-100: #e1f0ff;
+  --palette-blue-200: #c7e2ff;
+  --palette-blue-300: #81beff;
+  --palette-blue-400: #56adff;
+  --palette-blue-500: #008bf6;
+  --palette-blue-600: #0071eb;
+  --palette-blue-700: #304c84;
+  --palette-blue-800: #1e335a;
+  --palette-blue-900: #1a2b49;
+
+  /* Greens */
+  --palette-green-100: #d1f6e2;
+  --palette-green-200: #bbe9cf;
+  --palette-green-300: #8ed6b1;
+  --palette-green-400: #65b98f;
+  --palette-green-500: #009d68;
+  --palette-green-600: #007850;
+  --palette-green-700: #28563f;
+  --palette-green-800: #193b2b;
+  --palette-green-900: #002012;
+
+  /* Reds */
+  --palette-red-100: #ffe8ed;
+  --palette-red-200: #f4cdd7;
+  --palette-red-300: #f6b6b9;
+  --palette-red-400: #f38a90;
+  --palette-red-500: #f14f5e;
+  --palette-red-600: #c72a3d;
+  --palette-red-700: #951d2b;
+  --palette-red-800: #68111c;
+  --palette-red-900: #3b060c;
+
+  /* Oranges */
+  --palette-orange-100: #ffe9e3;
+  --palette-orange-200: #ffd6c8;
+  --palette-orange-300: #ffb597;
+  --palette-orange-400: #ff8833;
+  --palette-orange-500: #d66c00;
+  --palette-orange-600: #a65200;
+  --palette-orange-700: #724027;
+  --palette-orange-800: #562700;
+  --palette-orange-900: #311300;
+
+  /* Yellows */
+  --palette-yellow-100: #ffecc1;
+  --palette-yellow-200: #ffd938;
+  --palette-yellow-300: #eac300;
+
+  /* Brand */
+  --palette-guiding-red-400: #f4705f;
+  --palette-guiding-red-500: #ff5533;
+  --palette-plant-green: #a1d55d;
+  --palette-white: #ffffff;
+  --palette-black: #000000;
+}
+
+/* --- Semantic Tokens: Light Theme (Default for Compass) --- */
+:root[data-design-system="compass"],
+:root[data-design-system="compass"][data-theme="light"] {
+  /* Backgrounds */
+  --background-primary: var(--palette-white);
+  --background-secondary: var(--palette-grey-100);
+
+  /* Surfaces */
+  --surface-primary: var(--palette-white);
+  --surface-secondary: var(--palette-grey-100);
+  --surface-critical-weak: var(--palette-red-100);
+  --surface-critical-strong: var(--palette-red-600);
+  --surface-warning: var(--palette-yellow-100);
+  --surface-highlight: var(--palette-blue-100);
+  --surface-success-weak: var(--palette-green-100);
+  --surface-success-strong: var(--palette-green-600);
+  --surface-gyg: var(--palette-guiding-red-500);
+  --surface-disabled: var(--palette-grey-100);
+  --surface-loader: var(--palette-grey-800);
+
+  /* Labels (text colors) */
+  --label-primary: var(--palette-blue-900);
+  --label-secondary: var(--palette-grey-600);
+  --label-tertiary: var(--palette-grey-500);
+  --label-quaternary: var(--palette-white);
+  --label-critical: var(--palette-red-600);
+  --label-warning: var(--palette-orange-600);
+  --label-success: var(--palette-green-600);
+  --label-gyg: var(--palette-guiding-red-500);
+  --label-on-color: var(--palette-white);
+  --label-discounted: var(--palette-red-600);
+
+  /* Interactive elements */
+  --interactive-primary: var(--palette-blue-600);
+  --interactive-primary-hovered: var(--palette-blue-700);
+  --interactive-primary-pressed: var(--palette-blue-700);
+  --interactive-primary-disabled: var(--palette-grey-200);
+  --interactive-secondary: var(--palette-blue-900);
+  --interactive-secondary-hovered: var(--palette-blue-700);
+  --interactive-secondary-pressed: var(--palette-blue-700);
+  --interactive-secondary-disabled: var(--palette-grey-300);
+  --interactive-tertiary: var(--palette-grey-200);
+  --interactive-tertiary-hovered: rgba(220, 223, 228, 0.5);
+  --interactive-tertiary-pressed: rgba(220, 223, 228, 0.5);
+  --interactive-quaternary: var(--palette-white);
+  --interactive-quaternary-hovered: var(--palette-grey-200);
+  --interactive-quaternary-pressed: var(--palette-grey-200);
+  --interactive-quaternary-disabled: var(--palette-grey-300);
+  --interactive-critical: var(--palette-red-600);
+  --interactive-critical-hovered: var(--palette-red-700);
+  --interactive-critical-pressed: var(--palette-red-700);
+  --interactive-critical-disabled: var(--palette-grey-200);
+
+  /* On interactive (text on buttons) */
+  --on-interactive-primary: var(--palette-white);
+  --on-interactive-secondary: var(--palette-white);
+  --on-interactive-tertiary: var(--palette-blue-900);
+  --on-interactive-quaternary: var(--palette-blue-900);
+  --on-interactive-critical: var(--palette-white);
+  --on-interactive-disabled: var(--palette-grey-500);
+
+  /* Legacy borders */
+  --border-primary: var(--palette-grey-200);
+  --border-primary-hovered: var(--palette-grey-400);
+  --border-primary-pressed: var(--palette-grey-400);
+  --border-primary-focused: var(--palette-blue-600);
+  --border-primary-error: var(--palette-red-600);
+  --border-primary-disabled: var(--palette-grey-100);
+  --border-secondary: var(--palette-grey-100);
+
+  /* Borders */
+  --border-interactive: var(--palette-grey-500);
+  --border-interactive-hovered: var(--palette-grey-700);
+  --border-interactive-pressed: var(--palette-grey-700);
+  --border-interactive-focused: var(--palette-blue-600);
+  --border-interactive-error: var(--palette-red-600);
+  --border-interactive-disabled: var(--palette-grey-100);
+  --border-non-interactive: var(--palette-grey-100);
+
+  /* Separators */
+  --separator-primary: var(--palette-grey-100);
+  --separator-secondary: var(--palette-grey-200);
+
+  /* Decoratives */
+  --decorative-guiding-red: var(--palette-guiding-red-500);
+  --decorative-poolside-blue: var(--palette-blue-300);
+  --decorative-plant-green: var(--palette-plant-green);
+  --decorative-flamingo-pink: var(--palette-red-200);
+  --decorative-basking-yellow: var(--palette-yellow-200);
+  --decorative-midnight-blue: var(--palette-blue-900);
+
+  /* Overlays */
+  --overlay-20: rgba(26, 43, 73, 0.2);
+  --overlay-50: rgba(26, 43, 73, 0.5);
+  --supportive-transparent: transparent;
+  --supportive-over-view-20: rgba(26, 43, 73, 0.2);
+  --supportive-over-view-50: rgba(26, 43, 73, 0.5);
+  --supportive-over-image-20: rgba(25, 27, 32, 0.2);
+  --supportive-over-image-50: rgba(25, 27, 32, 0.5);
+}
+
+/* --- Semantic Tokens: Dark Theme --- */
+:root[data-design-system="compass"][data-theme="dark"] {
+  /* Backgrounds */
+  --background-primary: var(--palette-grey-900);
+  --background-secondary: var(--palette-grey-800);
+
+  /* Surfaces */
+  --surface-primary: var(--palette-grey-900);
+  --surface-secondary: var(--palette-grey-800);
+  --surface-critical-weak: var(--palette-red-700);
+  --surface-critical-strong: var(--palette-red-400);
+  --surface-warning: var(--palette-orange-700);
+  --surface-highlight: var(--palette-blue-700);
+  --surface-success-weak: var(--palette-green-700);
+  --surface-success-strong: var(--palette-green-400);
+  --surface-gyg: var(--palette-guiding-red-400);
+  --surface-disabled: var(--palette-grey-700);
+  --surface-loader: var(--palette-grey-800);
+
+  /* Labels */
+  --label-primary: var(--palette-white);
+  --label-secondary: var(--palette-grey-300);
+  --label-tertiary: var(--palette-grey-400);
+  --label-quaternary: var(--palette-white);
+  --label-critical: var(--palette-red-400);
+  --label-warning: var(--palette-orange-300);
+  --label-success: var(--palette-green-400);
+  --label-gyg: var(--palette-guiding-red-400);
+  --label-on-color: var(--palette-grey-900);
+  --label-discounted: var(--palette-red-400);
+
+  /* Interactive elements */
+  --interactive-primary: var(--palette-blue-400);
+  --interactive-primary-hovered: var(--palette-blue-500);
+  --interactive-primary-pressed: var(--palette-blue-500);
+  --interactive-primary-disabled: var(--palette-grey-700);
+  --interactive-secondary: var(--palette-white);
+  --interactive-secondary-hovered: var(--palette-grey-400);
+  --interactive-secondary-pressed: var(--palette-grey-400);
+  --interactive-secondary-disabled: var(--palette-grey-600);
+  --interactive-tertiary: var(--palette-grey-700);
+  --interactive-tertiary-hovered: rgba(73, 77, 88, 0.5);
+  --interactive-tertiary-pressed: rgba(73, 77, 88, 0.5);
+  --interactive-quaternary: var(--palette-white);
+  --interactive-quaternary-hovered: var(--palette-grey-200);
+  --interactive-quaternary-pressed: var(--palette-grey-200);
+  --interactive-quaternary-disabled: var(--palette-grey-300);
+  --interactive-critical: var(--palette-red-400);
+  --interactive-critical-hovered: var(--palette-red-500);
+  --interactive-critical-pressed: var(--palette-red-500);
+  --interactive-critical-disabled: var(--palette-grey-700);
+
+  /* On interactive */
+  --on-interactive-primary: var(--palette-blue-900);
+  --on-interactive-secondary: var(--palette-blue-900);
+  --on-interactive-tertiary: var(--palette-white);
+  --on-interactive-quaternary: var(--palette-blue-900);
+  --on-interactive-critical: var(--palette-blue-900);
+  --on-interactive-disabled: var(--palette-grey-400);
+
+  /* Legacy borders */
+  --border-primary: var(--palette-grey-700);
+  --border-primary-hovered: var(--palette-grey-500);
+  --border-primary-pressed: var(--palette-grey-500);
+  --border-primary-focused: var(--palette-blue-400);
+  --border-primary-error: var(--palette-red-400);
+  --border-primary-disabled: var(--palette-grey-700);
+  --border-secondary: var(--palette-grey-700);
+
+  /* Borders */
+  --border-interactive: var(--palette-grey-600);
+  --border-interactive-hovered: var(--palette-grey-400);
+  --border-interactive-pressed: var(--palette-grey-400);
+  --border-interactive-focused: var(--palette-blue-400);
+  --border-interactive-error: var(--palette-red-400);
+  --border-interactive-disabled: var(--palette-grey-700);
+  --border-non-interactive: var(--palette-grey-700);
+
+  /* Separators */
+  --separator-primary: var(--palette-grey-700);
+  --separator-secondary: var(--palette-grey-700);
+
+  /* Decoratives */
+  --decorative-guiding-red: var(--palette-guiding-red-500);
+  --decorative-plant-green: var(--palette-plant-green);
+  --decorative-flamingo-pink: var(--palette-red-200);
+  --decorative-basking-yellow: var(--palette-yellow-200);
+  --decorative-midnight-blue: var(--palette-blue-900);
+
+  /* Overlays */
+  --overlay-20: rgba(26, 43, 73, 0.2);
+  --overlay-50: rgba(26, 43, 73, 0.5);
+  --supportive-transparent: transparent;
+  --supportive-over-view-20: rgba(26, 43, 73, 0.2);
+  --supportive-over-view-50: rgba(26, 43, 73, 0.5);
+  --supportive-over-image-20: rgba(25, 27, 32, 0.2);
+  --supportive-over-image-50: rgba(25, 27, 32, 0.5);
+}
